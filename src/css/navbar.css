@@ -1,0 +1,12 @@
+.nav_img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid white;
+    /* background-color: aliceblue; */
+    background-image: url("../images/logonav.jpg");
+    background-size: cover;
+    background-position: 0px -4px;
+
+}
+

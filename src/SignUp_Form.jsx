@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import './SignUp_form.css'
 import Login from './Login';
+import { useNavigate } from 'react-router-dom';
 function SignUp_Form() {
     const [sign,setsign]=useState({
         username:"",
@@ -10,6 +11,7 @@ function SignUp_Form() {
         confirmpassword:""
     })
     const [data,setdata]=useState(false);
+    let nav =useNavigate();
     const inputvalue =(e)=>{
         let {name,value}=e.target
         setsign({
@@ -52,7 +54,7 @@ function SignUp_Form() {
 
     }
     if(data){
-        return <Login/>
+        nav("/login")
     }
 
 

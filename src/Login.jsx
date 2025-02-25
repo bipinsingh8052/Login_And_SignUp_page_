@@ -1,7 +1,6 @@
 import { useState } from "react"
-import SignUp_Form from "./SignUp_Form";
 import './Login.css'
-import Main_page from "./Main_page";
+import { useNavigate } from "react-router-dom";
 
 export default function Login() {
   let [Click,setclick]=useState(false);
@@ -10,6 +9,7 @@ export default function Login() {
     email:"",
     password:""
   });
+  let nav =useNavigate();
   function inputvalue(e){
    
     const {name,value}=e.target;
@@ -19,7 +19,7 @@ export default function Login() {
     });
   }
   if(Click){
-    return <SignUp_Form/>
+     nav("/signUp")
   }
 
 
@@ -44,7 +44,7 @@ export default function Login() {
     }
   }
   if(nextpage){
-    return <Main_page/>
+    nav("account")
   }
   return (
     <>

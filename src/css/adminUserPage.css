@@ -1,0 +1,30 @@
+.adminbtn,.userbtn{
+    padding: 10px;
+    font-size: 30px;
+    outline: none;
+}
+.adminbtn{
+    background-color: rgb(225, 69, 17);
+    border: none;
+    border-radius: 10px;
+    
+}
+.adminbtn:hover{
+    cursor: pointer;
+    transform: scaleX(1.1);
+    transition: all ease ;
+    box-shadow: -3px -1px 8px -1px yellowgreen;
+}
+    
+.userbtn {
+    background-color: pink;
+    border: none;
+    border-radius: 10px;
+}
+.userbtn:hover{
+    cursor: pointer;
+    border: none;
+    transform: scaleX(1.1);
+    transition: all ease ;
+    box-shadow: -3px -1px 8px -1px yellowgreen;
+}
